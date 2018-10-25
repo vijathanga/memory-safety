@@ -40,7 +40,7 @@ Since Splint is a static analysis tool, it doesn't introduce any performance ove
 1. Heap allocation only
 2. Heap allocation and deallocation
 3. Heap allocation and partial deallocation
-4. Heap applocation and Stack allocation, deallocation
+4. Heap/Stack allocation/deallocation, pointer arithmetic
 
 The runtime of these programs is given in the graph below
 
@@ -60,7 +60,7 @@ It can be seen that memory usage in SoftBound+CETS keeps increasing even after h
   
 ## Experiment Setup
     
-All benchmark test were evaluated on     
+All benchmark tests were evaluated on     
 &nbsp;&nbsp;&nbsp;&nbsp;    - Ubuntu 64-bit VM with 8 GB RAM and 4 cores.    
 &nbsp;&nbsp;&nbsp;&nbsp;    - Compiler - clang version 3.4
 
