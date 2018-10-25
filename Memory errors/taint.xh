@@ -1,0 +1,7 @@
+
+int printf (/*@untainted@*/ const char *fmt, ...);
+
+char *fgets (char *s, int n, FILE *stream) /*@ensures tainted s@*/ ;
+
+char *strcat (/*@returned@*/ char *s1, char *s2)
+/*@ensures s1:taintedness = s1:taintedness | s2:taintedness @*/;
